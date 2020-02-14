@@ -1,0 +1,38 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>
+      <h4>Register new user here!</h4>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field class="example-full-width">
+        <input [(ngModel)]="email" name="email" matInput placeholder="email" type="text">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <input [(ngModel)]="password" name="password" matInput placeholder="password" type="password">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input type="text" matInput name="name" [(ngModel)]="name" placeholder="name">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input type="number" matInput name="age" [(ngModel)]="age" placeholder="age">
+      </mat-form-field>
+      <br>
+      <mat-radio-group [(ngModel)]="sex" name="sex" aria-placeholder="Sex">
+        <mat-radio-button value="Male">Male</mat-radio-button>    
+        <mat-radio-button value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <mat-form-field style="width: 100%">
+        <textarea matInput name="description" [(ngModel)]="description" placeholder="description"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="register()" mat-raised-button color="primary">Submit</button>
+  </mat-card-actions>
+</mat-card>

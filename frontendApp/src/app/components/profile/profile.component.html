@@ -1,0 +1,46 @@
+<mat-tab-group>
+  <mat-tab label="Profile">
+    <mat-card style="max-width:70%;">
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Profile</h4>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item>
+            Name: {{userprofile?.name}}
+          </mat-list-item>
+          <mat-list-item>
+            Email: {{userprofile?.email}}
+          </mat-list-item>
+          <mat-list-item>
+            Age: {{userprofile?.age}}
+          </mat-list-item>
+          <mat-list-item>
+            Sex: {{userprofile?.sex}}
+          </mat-list-item>
+          <mat-list-item>
+            Description: {{userprofile?.description}}
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Posts">
+    <mat-card style="max-width:70%;">
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Posts</h4>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-message></app-message>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

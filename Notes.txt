@@ -1,0 +1,9 @@
+Publishing App to Prod using AWS:
+
+Services in the front end might consume the backend methods using http://localhost
+Once you publish it, everytime you cannot change the service.ts file
+Instead , it should be in a config file for easy maintenance
+Environment config file is present in "environments" folder
+You can set the items that are ever changing here in this config file and use it in the code
+
+Building 

@@ -1,0 +1,4 @@
+<h3>Users</h3>
+<div *ngFor="let user of users">
+  <mat-card style="cursor: pointer;" [routerLink]="['/profile', user._id]">{{user.name}}</mat-card>
+</div>
